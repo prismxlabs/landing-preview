@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>PRISM — The Modern Workspace for Financial Markets</title>
+<meta name="description" content="Data, research and an AI analyst for India's markets. Built for investors, analysts, traders and strategists.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PRISM">
+<meta property="og:title" content="PRISM — The Modern Workspace for Financial Markets">
+<meta property="og:description" content="Data, research and an AI analyst for India’s markets.">
+<meta property="og:url" content="https://prismxlabs.github.io/landing-preview/">
+<meta property="og:image" content="https://prismxlabs.github.io/landing-preview/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo_nav.png">
+<script>(function(){var r=document.documentElement,t;try{t=localStorage.getItem('prism-theme')}catch(e){}if(t==='light'||t==='dark')r.setAttribute('data-theme',t);var a=r.getAttribute('data-theme'),d=a?a==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.classList.add(d?'is-dark':'is-light')})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=34">
+</head>
+<body>
+
+<!-- Refraction filters for the liquid-glass surfaces are generated into this SVG by main.js (Chromium only). -->
+<svg class="lg-defs" aria-hidden="true" width="0" height="0"><defs id="lg-defs"></defs></svg>
+
+<nav class="nav" aria-label="Main">
+  <div class="nav-pill glass">
+    <a class="brand" href="#top" aria-label="PRISM home">
+      <img src="assets/logo_nav.png" alt="" width="26" height="23">
+      <img class="wordmark" src="assets/wordmark.png" alt="PRISM" width="84" height="14">
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#product">Product</a>
+      <a href="#why">Why PRISM</a>
+      <a href="#data">Data</a>
+      <a class="nav-only-mobile" href="https://updated.prismxlabs.com/#signin">Sign In</a>
+      <button class="nav-only-mobile theme-row" type="button" data-theme-toggle>
+        <i data-icon="moon" class="show-light"></i><i data-icon="sun" class="show-dark"></i>
+        <span class="show-light">Dark Mode</span><span class="show-dark">Light Mode</span>
+      </button>
+    </div>
+    <div class="nav-cta">
+      <a class="nav-signin" href="https://updated.prismxlabs.com/#signin">Sign In</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour mode">
+        <i data-icon="moon" class="show-light"></i><i data-icon="sun" class="show-dark"></i>
+      </button>
+      <a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signup" target="_blank" rel="noopener">Request Access</a>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-media" aria-hidden="true">
+    <!-- Hero film: prism-hero-film.mp4 from the "Hebbia landing page video recreation" session, copied to assets/hero.mp4.
+         Light mode plays the same caption-free film under a light wash (styles.css). To use a dedicated light cut later,
+         point data-light at it. The canvas animation shows until the film starts playing. -->
+    <canvas id="mock-video"></canvas>
+    <video id="hero-video" autoplay muted loop playsinline preload="auto" data-dark="assets/hero.mp4" data-light="assets/hero.mp4"></video>
+    <div class="hero-grain"></div>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-inner">
+    <h1 class="hero-title">The Modern Workspace for <em>Financial Markets</em></h1>
+    <p class="hero-lede">Data, research and an AI analyst for India's markets.</p>
+
+    <form class="spectra-bar glass lg" id="spectra-bar" autocomplete="off">
+      <label class="sr-only" for="spectra-input">Ask Spectra</label>
+      <span class="bar-icon c-spectra" aria-hidden="true"><i data-icon="sparkles"></i></span>
+      <span class="bar-field">
+        <span class="bar-ghost" aria-hidden="true" hidden><span class="ghost-typed"></span><span class="ghost-rest"></span></span>
+        <input id="spectra-input" type="text" spellcheck="false" aria-describedby="spectra-hint" placeholder="Ask Spectra about any company, sector or signal">
+      </span>
+      <button class="bar-tab" type="button" aria-label="Complete the question">Tab</button>
+      <button class="send" type="submit" aria-label="Ask Spectra (takes you to sign in)">
+        <svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 15.5V4.5M5 9.5l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+    <p class="bar-reply" id="bar-reply" hidden><a id="signin-go" href="https://updated.prismxlabs.com/#signin" target="_blank" rel="noopener">Sign in to see Spectra’s answer →</a></p>
+    <p class="sr-only" id="spectra-hint">Press Tab or the right arrow to complete the suggested question, and the up or down arrow for another. Sending takes you to sign in.</p>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ PRODUCT: Dashboard / Spectra switch, then Koyfin-style text tabs for that group ============ -->
+  <section class="section product" id="product">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="display">One Workspace.<br><em>Every Angle on the Market.</em></h2>
+      </div>
+      <div class="product-bar reveal">
+        <div class="seg glass" role="tablist" aria-label="Product area">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button role="tab" id="tab-dashboard" aria-selected="true" aria-controls="fg-dashboard">Dashboard</button>
+          <button role="tab" id="tab-spectra" aria-selected="false" aria-controls="fg-spectra" tabindex="-1">Spectra</button>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+    <div class="feat-group is-active" id="fg-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
+      <div class="feat-tabs-wrap">
+        <div class="feat-tabs" role="tablist" aria-label="Dashboard features">
+          <button role="tab" id="ft-company" aria-selected="true" aria-controls="fp-company">Company</button>
+          <button role="tab" id="ft-market" aria-selected="false" aria-controls="fp-market" tabindex="-1">Market</button>
+          <button role="tab" id="ft-charts" aria-selected="false" aria-controls="fp-charts" tabindex="-1">Charts</button>
+          <button role="tab" id="ft-intelligence" aria-selected="false" aria-controls="fp-intelligence" tabindex="-1">Intelligence</button>
+          <button role="tab" id="ft-alternative" aria-selected="false" aria-controls="fp-alternative" tabindex="-1">Alternative</button>
+          <button role="tab" id="ft-investors" aria-selected="false" aria-controls="fp-investors" tabindex="-1">Investors &amp; Analysts</button>
+          <button role="tab" id="ft-indices" aria-selected="false" aria-controls="fp-indices" tabindex="-1">Indices &amp; Nowcasts</button>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="feat-stage">
+          <div class="feat-panel is-active" role="tabpanel" id="fp-company" aria-labelledby="ft-company">
+            <div class="feat-shot"><img class="show-light" src="assets/screens/company-light.jpg" alt="Company in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/company-dark.jpg" alt="Company in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Up to 25 years of statements, ratios and quarterly results for every listed company, with ownership, filings and news on the same page. Open a company and the whole story is there.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#company/RELIANCE/financials" target="_blank" rel="noopener">Open Company <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-market" aria-labelledby="ft-market" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/market-light.jpg" alt="Market in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/market-dark.jpg" alt="Market in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Indices, sectors, ETFs, bonds, currencies and commodities, with breadth and 52-week ranges. The whole market on one screen, through the session.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#market" target="_blank" rel="noopener">Open Market <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-charts" aria-labelledby="ft-charts" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/charts-light.jpg" alt="Charts in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/charts-dark.jpg" alt="Charts in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Candles, indicators and peers side by side. Compare anything against anything, and add your own formulas when the built-in studies aren’t enough.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#charts" target="_blank" rel="noopener">Open Charts <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-intelligence" aria-labelledby="ft-intelligence" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/intelligence-light.jpg" alt="Intelligence in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/intelligence-dark.jpg" alt="Intelligence in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Power, payments, transport, agriculture and more, each linked to the companies it moves. See what’s happening state by state and who it affects, without needing any domain knowledge.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#power/states" target="_blank" rel="noopener">Open Intelligence <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-alternative" aria-labelledby="ft-alternative" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/alternative-light.jpg" alt="Alternative in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/alternative-dark.jpg" alt="Alternative in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>UPI payments, GST, power demand, rates and more, each with how far back it goes and how often it updates. Turn any series into an alert in one click.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#alternative" target="_blank" rel="noopener">Open Alternative <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-investors" aria-labelledby="ft-investors" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/investors-light.jpg" alt="Investors &amp; Analysts in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/investors-dark.jpg" alt="Investors &amp; Analysts in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Analyst reports and research, mutual fund flows and holdings, and what the big investors own and are buying. See where the smart money is going.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#funds" target="_blank" rel="noopener">Open Investors &amp; Analysts <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-indices" aria-labelledby="ft-indices" hidden>
+            <div class="feat-shot"><img class="show-light" src="assets/screens/indices-light.jpg" alt="Indices &amp; Nowcasts in PRISM" loading="lazy"><img class="show-dark" src="assets/screens/indices-dark.jpg" alt="Indices &amp; Nowcasts in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Proprietary models that forecast the numbers before they’re released, and indices that show which way the economy and markets are leaning.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#indices/headline" target="_blank" rel="noopener">Open Indices &amp; Nowcasts <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-arrows">
+            <button class="feat-arrow glass glass-sm" type="button" data-step="-1" aria-label="Previous"><i data-icon="chevron-left"></i></button>
+            <button class="feat-arrow glass glass-sm" type="button" data-step="1" aria-label="Next"><i data-icon="chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feat-group" id="fg-spectra" role="tabpanel" aria-labelledby="tab-spectra" hidden>
+      <div class="feat-tabs-wrap">
+        <div class="feat-tabs" role="tablist" aria-label="Spectra features">
+          <button role="tab" id="ft-spectra-ask" aria-selected="true" aria-controls="fp-spectra-ask">Ask Spectra</button>
+          <button role="tab" id="ft-spectra-monitors" aria-selected="false" aria-controls="fp-spectra-monitors" tabindex="-1">Monitors</button>
+          <button role="tab" id="ft-spectra-trading" aria-selected="false" aria-controls="fp-spectra-trading" tabindex="-1">Trading</button>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="feat-stage">
+          <div class="feat-panel is-active" role="tabpanel" id="fp-spectra-ask" aria-labelledby="ft-spectra-ask">
+            <div class="feat-shot"><img src="assets/screens/spectra-ask.jpg" alt="Ask Spectra in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Open Spectra beside any page and ask about what’s on it. It answers from PRISM’s data, with the source beside every number, so you can check it in one click.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#spectra" target="_blank" rel="noopener">Open Ask Spectra <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-spectra-monitors" aria-labelledby="ft-spectra-monitors" hidden>
+            <div class="feat-shot"><img src="assets/screens/spectra-monitors.jpg" alt="Monitors in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Describe what to watch in a sentence. PRISM checks the data and tells you the moment something changes.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#monitors" target="_blank" rel="noopener">Open Monitors <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-panel" role="tabpanel" id="fp-spectra-trading" aria-labelledby="ft-spectra-trading" hidden>
+            <div class="feat-shot"><img src="assets/screens/spectra-trading.jpg" alt="Trading in PRISM" loading="lazy"></div>
+            <div class="feat-copy">
+              <p>Turn a trading idea into rules, backtest it on years of history, then paper-trade it before real money moves.</p>
+              <a class="feat-link" href="https://updated.prismxlabs.com/#strategy-lab" target="_blank" rel="noopener">Open Trading <i data-icon="arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="feat-arrows">
+            <button class="feat-arrow glass glass-sm" type="button" data-step="-1" aria-label="Previous"><i data-icon="chevron-left"></i></button>
+            <button class="feat-arrow glass glass-sm" type="button" data-step="1" aria-label="Next"><i data-icon="chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY PRISM: great data for everyone ============ -->
+  <section class="section belief" id="why">
+    <div class="glow glow-c" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why PRISM</p>
+        <h2 class="display">Great Data Shouldn’t Be<br><em>a Privilege.</em></h2>
+        <p class="sub">Institutional-grade data has long sat behind expensive terminals. PRISM puts it, and an analyst to read it, in front of anyone who wants to understand the market.</p>
+      </div>
+    </div>
+    <!-- Photos: Unsplash (Unsplash licence: free for commercial use, no credit required). IDs: investors photo-1675848311787,
+         analysts photo-1523380262778, traders photo-1679666600450, advisors photo-1572553284541, students photo-1790873021882. -->
+    <div class="wrap">
+    <div class="people reveal" aria-label="Who PRISM is for">
+        <figure class="person">
+          <img src="assets/photos/investors.jpg" alt="" loading="lazy">
+          <figcaption><b>Investors</b><span>Know what you own, and what changed.</span></figcaption>
+        </figure>
+        <figure class="person">
+          <img src="assets/photos/analysts.jpg" alt="" loading="lazy">
+          <figcaption><b>Analysts</b><span>Start from the answer, not a blank page.</span></figcaption>
+        </figure>
+        <figure class="person">
+          <img src="assets/photos/traders.jpg" alt="" loading="lazy">
+          <figcaption><b>Traders</b><span>Catch the move while it’s moving.</span></figcaption>
+        </figure>
+        <figure class="person">
+          <img src="assets/photos/advisors.jpg" alt="" loading="lazy">
+          <figcaption><b>Advisors</b><span>Bring clients the full picture.</span></figcaption>
+        </figure>
+        <figure class="person">
+          <img src="assets/photos/students.jpg" alt="" loading="lazy">
+          <figcaption><b>Students</b><span>Learn markets on real data.</span></figcaption>
+        </figure>
+    </div>
+    </div>
+    <div class="wrap">
+      <!-- Founder video: shows up on its own once landing/assets/videos/founder.mp4 exists. -->
+      <div class="founder glass reveal" hidden>
+        <video id="founder-video" playsinline preload="metadata" controls data-src="assets/videos/founder.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DATA MARQUEE ============ -->
+  <section class="section data" id="data">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Data</p>
+        <h2 class="display">Every Source, <em>One Place.</em></h2>
+        <p class="sub">Filings, prices, flows and the real economy. Cleaned, connected and kept current, so you spend your time on the thinking.</p>
+      </div>
+    </div>
+    <div class="marquee reveal" aria-label="Data in PRISM">
+      <div class="marquee-row" data-dir="left">
+        <span class="tag glass glass-sm"><span class="tag-badge c-blue"><i data-icon="chart-candlestick"></i></span>NSE &amp; BSE Prices</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-indigo"><i data-icon="file-text"></i></span>Corporate Filings</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-violet"><i data-icon="phone"></i></span>Earnings-Call Transcripts</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-orange"><i data-icon="book-open"></i></span>Annual Reports</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-teal"><i data-icon="chart-pie"></i></span>Shareholding Patterns</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-rose"><i data-icon="user-check"></i></span>Insider Trades</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-amber"><i data-icon="handshake"></i></span>Bulk &amp; Block Deals</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-pink"><i data-icon="rocket"></i></span>IPO Prospectuses</span>
+      </div>
+      <div class="marquee-row" data-dir="right">
+        <span class="tag glass glass-sm"><span class="tag-badge c-indigo"><i data-icon="scale"></i></span>F&amp;O Participant Positions</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-green"><i data-icon="wallet"></i></span>Mutual Fund NAVs</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-sky"><i data-icon="globe"></i></span>FII &amp; DII Flows</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-blue"><i data-icon="landmark"></i></span>RBI Rates &amp; Liquidity</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-amber"><i data-icon="receipt"></i></span>GST Collections</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-violet"><i data-icon="qr-code"></i></span>UPI Payments</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-orange"><i data-icon="truck"></i></span>E-Way Bills</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-teal"><i data-icon="percent"></i></span>Bond Yields</span>
+      </div>
+      <div class="marquee-row" data-dir="left">
+        <span class="tag glass glass-sm"><span class="tag-badge c-yellow"><i data-icon="zap"></i></span>Power Demand</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-blue"><i data-icon="ship"></i></span>Port Cargo</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-sky"><i data-icon="plane"></i></span>Aviation Traffic</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-rose"><i data-icon="car"></i></span>Vehicle Registrations</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-orange"><i data-icon="wheat"></i></span>Commodity Prices</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-sky"><i data-icon="cloud-rain"></i></span>Monsoon &amp; Weather</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-indigo"><i data-icon="clipboard-list"></i></span>Government Tenders</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-green"><i data-icon="briefcase"></i></span>Hiring Trends</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-blue"><i data-icon="newspaper"></i></span>News &amp; Policy</span>
+        <span class="tag glass glass-sm"><span class="tag-badge c-pink"><i data-icon="message-circle"></i></span>Company Posts on X</span>
+      </div>
+    </div>
+    <div class="wrap">
+      <!-- Counts from production Postgres, 5 Nov 2026, rounded down: ~542M rows across every schema (raw 128M source
+           records plus derived marts and metrics), meta.series_catalog 142,516, ci.company_profile_current 8,062,
+           screen.document 2,798,682, meta.source_registry 341, database size 241 GB. -->
+      <dl class="data-stats reveal">
+        <div><dt>540M+</dt><dd>Data Points</dd></div>
+        <div><dt>140K+</dt><dd>Data Series</dd></div>
+        <div><dt>8,000+</dt><dd>Companies</dd></div>
+        <div><dt>2.8M+</dt><dd>Filings &amp; Documents</dd></div>
+        <div><dt>340+</dt><dd>Sources</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing">
+    <div class="closing-glow" aria-hidden="true"></div>
+    <div class="wrap reveal">
+      <h2 class="display">Markets Move Fast.<br><em>Your Workspace Should Too.</em></h2>
+      <div class="closing-actions">
+        <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signup" target="_blank" rel="noopener">Request Access</a>
+        <a class="btn btn-glass" href="https://updated.prismxlabs.com/#signin">Sign In</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top" aria-label="PRISM home">
+        <img src="assets/logo_nav.png" alt="" width="26" height="23">
+        <img class="wordmark" src="assets/wordmark.png" alt="PRISM" width="84" height="14">
+      </a>
+      <div class="foot-cols">
+        <div><h4>Product</h4><a href="#product">Spectra</a><a href="#product">Companies</a><a href="#product">Screener</a><a href="#product">Alternative</a><a href="#product">Monitors</a></div>
+        
+        <div><h4>Company</h4><span class="foot-mail">hello@prismxlabs.com</span><a href="#">Careers</a><a href="#">Security</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>PRISM provides market data and research tools for information only. Nothing here is investment advice or a recommendation to buy or sell any security.</p>
+      <p>© 2026 PRISM</p>
+    </div>
+  </div>
+</footer>
+
+<script src="icons.js?v=6"></script>
+<script src="main.js?v=17"></script>
+</body>
+</html>
